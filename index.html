@@ -19,7 +19,6 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
                 'primary-txt-color': '#707070',
                 'primary-bg-color': '#B68C5A',
             },
@@ -37,6 +36,20 @@
         }
         .svg-hover-color:hover > svg > path{
             stroke: #111827;
+        }
+        #search-your-service{
+          text-align: center;
+        }
+        #search-your-service::-webkit-input-placeholder{
+          text-align: center;
+        }
+        @media screen and (min-width: 768px) {
+          #search-your-service{
+          text-align: left;
+          }
+        #search-your-service::-webkit-input-placeholder{
+          text-align: left;
+          }
         }
     </style>
 </head>
@@ -80,6 +93,23 @@
           <button class="inline-flex transition bg-primary-bg-color text-white hover:text-[#414040] border-0 py-5 px-7 focus:outline-none hover:bg-gray-200 rounded-lg text-lg font-semibold mt-4 lg:mt-0">
             Free Consultation
           </button>
+        </div>
+        <!-- banner section -->
+        <div class="container mx-auto px-5 lg:px-0">
+          <div class="hero py-24 rounded-lg" style="background: linear-gradient(to top, #111 0%, rgba(17, 17, 17, 0.00) 100%), url('./images/banner.png') no-repeat; background-size: 100% 100%;">
+            <div class="hero-content text-center text-white">
+              <div class="max-w-2xl">
+                <h1 class="mb-6 text-eb-garamond text-7xl font-extrabold">We Provide Effective Legal Solutions</h1>
+                <p class="mb-8 text-[#E7E7E7]">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                <div class="flex items-center flex-col md:flex-row space-y-3 md:space-y-0">
+                  <input id="search-your-service" type="text" placeholder="Search your services" class="input input-bordered text-[#A0A0A0] w-full p-7 max-w-lg" />
+                  <button class="ml-6 inline-flex transition bg-primary-bg-color text-white hover:text-[#414040] border-0 py-4 px-10 focus:outline-none hover:bg-gray-200 rounded-lg text-xl font-semibold">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </header>
     <!-- header section ends here -->
