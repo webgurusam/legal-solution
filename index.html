@@ -70,7 +70,7 @@
 
         /* css rules for the legal practice area  */
 
-        #grid {
+        #grid, #grid-2 {
           --line-offset: 2px;
           --line-thickness: 1px;
           --line-color: #E7E7E7;
@@ -79,7 +79,9 @@
           grid-template-columns: repeat(3, 1fr);
           overflow: hidden;
         }
-
+        #grid-2{
+          grid-template-columns: repeat(2, 1fr);
+        }
         .grid__item {
           position: relative;
         }
@@ -110,14 +112,14 @@
 
         /* for tablet devices */
         @media screen and (min-width: 425px) and (max-width: 768px) {
-          #grid{
+          #grid, #grid-2{
             grid-template-columns: repeat(2, 1fr);
           }
         }
 
         /* for mobile devices */
         @media screen and (max-width: 425px) {
-          #grid{
+          #grid, #grid-2{
             grid-template-columns: repeat(1, 1fr);
           }
         }
@@ -546,6 +548,112 @@
         </div>
       </section>
       <!-- FAQ ends here -->
+
+      <!-- contact with us starts here -->
+      <section>
+        <div class="container mx-auto px-5 lg:px-0">
+          <!-- section title -->
+          <div class="flex flex-col text-center w-full mb-16">
+            <h1 class="sm:text-4xl text-2xl font-extrabold font-eb-garamond mb-6 text-primary-title-color">Contact With Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-primary-txt-color">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          </div>
+          <!-- contact us form & info content -->
+          <div class="flex gap-7">
+            <div class="w-1/2">
+              <div id="grid-2" class="">
+                <!-- card 1 -->
+                <div class="grid__item">
+                  <div class="flex min-h-[285px]">
+                    <div class="p-12 py-16 space-y-8 text-center w-full bg-[#F3F3F3]">
+                      <div class="flex justify-center">
+                        <img src="./images/location.png" alt="">
+                      </div>
+                      <div>
+                        <h1 class="sm:text-3xl text-2xl font-extrabold font-eb-garamond mb-6 text-primary-title-color">Address</h1>
+                        <p class="leading-relaxed text-primary-txt-color">A108 Adam Street, <br>New York, NY 535022</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="grid__item">
+                  <div class="flex min-h-[285px]">
+                    <div class="p-12 py-16 space-y-8 text-center w-full bg-[#F3F3F3]">
+                      <div class="flex justify-center">
+                        <img src="./images/call.png" alt="">
+                      </div>
+                      <div>
+                        <h1 class="sm:text-3xl text-2xl font-extrabold font-eb-garamond mb-6 text-primary-title-color">Call Us</h1>
+                        <p class="leading-relaxed text-primary-txt-color">
+                          +88 01750 00 00 00 
+                          <br>
+                          +88 01750 00 00 00
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 3 -->
+                <div class="grid__item">
+                  <div class="flex min-h-[285px]">
+                    <div class="p-12 py-16 space-y-8 text-center w-full bg-[#F3F3F3]">
+                      <div class="flex justify-center">
+                        <img src="./images/email.png" alt="">
+                      </div>
+                      <div>
+                        <h1 class="sm:text-3xl text-2xl font-extrabold font-eb-garamond mb-6 text-primary-title-color">Email</h1>
+                        <p class="leading-relaxed text-primary-txt-color">
+                          info@gmail.com
+                          <br>
+                          info@gmail.com
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 4 -->
+                <div class="grid__item">
+                  <div class="flex min-h-[285px]">
+                    <div class="p-12 py-16 space-y-8 text-center w-full bg-[#F3F3F3]">
+                      <div class="flex justify-center">
+                        <img src="./images/time.png" alt="">
+                      </div>
+                      <div>
+                        <h1 class="sm:text-3xl text-2xl font-extrabold font-eb-garamond mb-6 text-primary-title-color">Working Hours</h1>
+                        <p class="leading-relaxed text-primary-txt-color">
+                          Mon-Fri: 9AM to 5PM
+                          <br>
+                          Sunday: 9AM to 1 PM
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-1/2 text-gray-600 body-font relative">
+              <div>
+                <div class="bg-white flex flex-col md:ml-auto w-full">
+                  <div class="relative mb-4">
+                    <input type="text" name="name" placeholder="Your Name" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                    <input type="email" name="email" placeholder="Your Email" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                    <input type="text" name="subject" placeholder="Subject" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                  </div>
+                  <div class="relative mb-4">
+                    <textarea name="message" placeholder="Your Message" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea>
+                  </div>
+                  <button class="text-white bg-primary-bg-color border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 hover:text-black rounded text-lg">Send Message</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- contact with us ends here -->
     </main>
     <!-- main section ends here -->
 
